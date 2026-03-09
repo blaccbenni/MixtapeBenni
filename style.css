@@ -161,7 +161,7 @@ h3 {
 .stat-box,
 .track-item,
 .highlight-box {
-  background: rgba(255, 255, 255, 0.04);
+  background: radial-gradient(circle, rgba(244,180,0,0.28) 0%, rgba(244,180,0,0.14) 35%, rgba(244,180,0,0.06) 55%, transparent 75%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
 }
@@ -273,6 +273,7 @@ h3 {
   z-index: 1;
   pointer-events: none;
 }
+
 
 
 
