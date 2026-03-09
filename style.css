@@ -260,5 +260,22 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+.hero-right {
+  position: relative;
+}
+
+.hero-right::before {
+  content: "";
+  position: absolute;
+  inset: 40px;
+  background: radial-gradient(circle, rgba(244,180,0,0.22) 0%, rgba(244,180,0,0.08) 40%, transparent 70%);
+  filter: blur(30px);
+  z-index: 0;
+}
+
+.hero-right .cover {
+  position: relative;
+  z-index: 1;
+}
 
 
