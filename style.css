@@ -143,9 +143,11 @@ h3 {
 
 .cover {
   width: 100%;
-  display: block;
-  border-radius: 18px;
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.45);
+  border-radius: 16px;
+  box-shadow: 
+    0 0 40px rgba(244,180,0,0.35),
+    0 0 80px rgba(244,180,0,0.15),
+    0 30px 60px rgba(0,0,0,0.6);
 }
 
 .stats {
@@ -249,3 +251,4 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
