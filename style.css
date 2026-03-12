@@ -365,6 +365,13 @@ h1 {
   text-align: center;
   letter-spacing: 0.2px;
 }
+.counter {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #d4af37;
+  font-weight: 600;
+  opacity: 0.9;
+}
 
 
 
