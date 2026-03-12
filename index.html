@@ -143,14 +143,17 @@
         </a>
 
         <div class="counter">
+<div class="counter">
 🔥 <span id="visit-count">0</span> fans tapped in
 </div>
-
 <script>
-fetch("https://api.counterapi.dev/v1/mixtapebenni/site/visits/up")
-  .then(res => res.json())
+fetch("https://api.counterapi.dev/v1/mixtapebenni/visits/up")
+  .then(response => response.json())
   .then(data => {
     document.getElementById("visit-count").textContent = data.count;
+  })
+  .catch(() => {
+    document.getElementById("visit-count").textContent = "0";
   });
 </script>
         <p class="small note">
@@ -192,6 +195,7 @@ fetch("https://api.counterapi.dev/v1/mixtapebenni/site/visits/up")
   </div>
 </body>
 </html>
+
 
 
 
