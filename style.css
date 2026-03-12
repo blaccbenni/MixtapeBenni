@@ -259,6 +259,14 @@ h1 {
   color: rgba(255, 255, 255, 0.72);
   text-align: left;
 }
+.video-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.25s ease;
+}
+
+.video-card:hover iframe {
+  box-shadow: 0 10px 30px rgba(244,180,0,0.35);
+}
 
 
 
