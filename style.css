@@ -252,6 +252,13 @@ h1 {
   color: #ffffff;
   text-align: center;
 }
+.video-subtext {
+  margin: -4px 0 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.72);
+  text-align: left;
+}
 
 
 
