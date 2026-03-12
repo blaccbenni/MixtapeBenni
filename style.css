@@ -300,6 +300,71 @@ h1 {
   filter: brightness(0.7);
   transition: filter 0.25s ease;
 }
+.video-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+}
+
+.video-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-thumb iframe {
+  display: block;
+  width: 100%;
+  height: 140px;
+  border: none;
+  border-radius: 12px;
+  background: #000;
+  transition: transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-thumb::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #ffffff;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.video-card:hover .video-thumb::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.video-card:hover .video-thumb iframe {
+  transform: scale(1.03);
+  filter: brightness(0.72);
+  box-shadow: 0 12px 30px rgba(244, 180, 0, 0.28);
+}
+
+.video-title {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
 
 
 
