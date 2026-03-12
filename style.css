@@ -267,6 +267,39 @@ h1 {
 .video-card:hover iframe {
   box-shadow: 0 10px 30px rgba(244,180,0,0.35);
 }
+.video-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-thumb::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+  color: white;
+  background: rgba(0,0,0,0.55);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.video-thumb:hover::after {
+  opacity: 1;
+}
+
+.video-thumb:hover iframe {
+  filter: brightness(0.7);
+  transition: filter 0.25s ease;
+}
 
 
 
