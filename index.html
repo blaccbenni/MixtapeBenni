@@ -142,6 +142,17 @@
           Unlock Mixtape
         </a>
 
+        <div class="counter">
+🔥 <span id="visit-count">0</span> fans tapped in
+</div>
+
+<script>
+fetch("https://api.counterapi.dev/v1/mixtapebenni/site/visits/up")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("visit-count").textContent = data.count;
+  });
+</script>
         <p class="small note">
           After you submit your email, the form confirmation page will send you to the private unlock page.
         </p>
@@ -181,6 +192,7 @@
   </div>
 </body>
 </html>
+
 
 
 
