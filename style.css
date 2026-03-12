@@ -240,6 +240,18 @@ h1 {
   text-transform: uppercase;
   color: #f4b400;
 }
+.video-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
 
 
 
